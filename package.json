@@ -8,7 +8,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "node-sass": "node-sass",
-    "sass": "node-sass -rw styles/main.scss styles.css"
+    "sass": "node-sass -rw --source-map true styles/main.scss styles.css"
   },
   "repository": {
     "type": "git",
