@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  },
+  "name": "th",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "node-sass": "node-sass",
+    "sass": "node-sass -rw styles/main.scss styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lhm0107/th.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lhm0107/th/issues"
+  },
+  "homepage": "https://github.com/lhm0107/th#readme",
+  "description": ""
+}
