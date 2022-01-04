@@ -585,7 +585,7 @@ li {
   letter-spacing: -0.02em;
   height: 55px; }
 
-.form-select {
+.form-select, .form-input {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.01em;
@@ -597,17 +597,20 @@ li {
   background-color: #FFF;
   border: 1px solid #E0E2E7;
   border-radius: 4px;
+  transition: background-color 200ms ease-in-out;
   appearance: none; }
-  .form-select::placeholder {
+  .form-select::placeholder, .form-input::placeholder {
     color: #B2B3B9; }
-  .form-select:not(disabled):hover {
+  .form-select:not(disabled):hover, .form-input:not(disabled):hover {
     background-color: #F7F8FA; }
-  .form-select:disabled {
+  .form-select:disabled, .form-input:disabled {
     cursor: not-allowed;
     opacity: 0.4; }
 
 .select-group {
   position: relative; }
+  .select-group.is-active .form-select {
+    border-color: #3DA5F5; }
   .select-group .form-select {
     padding-right: 40px;
     text-overflow: ellipsis; }
@@ -618,6 +621,19 @@ li {
     right: 8px;
     font-size: 24px;
     color: #B2B3B9;
+    pointer-events: none; }
+
+.input-group {
+  position: relative; }
+  .input-group .form-input {
+    padding-left: 40px; }
+  .input-group .ic-search {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    font-size: 20px;
+    color: #8C8D96;
     pointer-events: none; }
 
 .pagenation .page-control, .pagenation .page-item a,

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko-KR">
+<html lang="ko-KR" />
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -18,6 +18,58 @@
 		<link rel="stylesheet" href="./styles.css" />
 	</head>
 	<body>
-	
+		<header>
+			<h1>
+				<a href="/">
+					<img src="./assets/images/logo.svg" alt="내일의 집" />
+				</a>
+			</h1>
+
+			<nav>
+				<h2>메뉴</h2>
+				<ul>
+					<li><a href="/">커뮤니티</a></li>
+					<li><a href="/">스토어</a></li>
+					<li><a href="/">인테리어시공</a></li>
+				</ul>
+			</nav>
+
+			<button type="button" aria-label="메뉴 열기 버튼">
+				<i class="ic-menu"></i>
+			</button>
+
+			<button type="button" aria-label="검색창 열기 버튼">
+				<i class="ic-search"></i>
+			</button>
+
+			<div class="input-group">
+				<i class="ic-search" aria-hiden></i>
+			<input class="form-input" type="text" placeholder="스토어 검색" />
+			</div>
+
+			<a href="/" aria-label="스크랩북 페이지로 이동">
+				<i class="ic-bookmark"></i>
+			</a>
+
+			<a href="/" aria-label="내소식 페이지로 이동">
+				<i class="ic-bell"></i>
+			</a>
+
+			<a href="/" aria-label="장바구니 페이지로 이동">
+				<i class="ic-cart"></i>
+			</a>
+
+			<button type="button" aria-label="마이메뉴 열기 버튼">
+				<div class="avatar-32">
+					<img src="./assets/images/img-user-01.jpg" alt="사달라아저씨" />
+				</div>
+			</button>
+
+			<button type="button">
+				글쓰기
+				<i class="ic-chevron" aria-hidden></i>
+			</button>
+
+		</header>
 	</body>
 </html>
