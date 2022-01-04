@@ -653,6 +653,60 @@ li {
     color: #B2B3B9;
     pointer-events: none; }
 
+.pagenation .page-control, .pagenation .page-item a,
+.pagenation .page-item button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  color: #3F4150;
+  height: 26px;
+  font-weight: 700;
+  background-color: #FFF;
+  border-radius: 4px; }
+
+.pagenation .page-control {
+  width: 26px;
+  border: 1px solid #E0E2E7; }
+  .pagenation .page-control.page-prev .ic-chevron {
+    transform: rotate(90deg); }
+  .pagenation .page-control.page-next .ic-chevron {
+    transform: rotate(-90deg); }
+  .pagenation .page-control:hover {
+    opacity: 0.4; }
+  .pagenation .page-control .ic-chevron {
+    font-size: 20px; }
+
+.pagenation {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .pagenation .page-control.page-prev {
+    margin-right: 24px; }
+  .pagenation .page-control.page-next {
+    margin-left: 24px; }
+  .pagenation .page-list {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .pagenation .page-item {
+    margin-right: 4px; }
+    .pagenation .page-item.is-active a,
+    .pagenation .page-item.is-active button {
+      color: #FFF !important;
+      background-color: #3DA5F5; }
+    .pagenation .page-item:last-child {
+      margin-right: 0; }
+    .pagenation .page-item a,
+    .pagenation .page-item button {
+      min-width: 26px;
+      background-color: #FFF; }
+      .pagenation .page-item a:hover,
+      .pagenation .page-item button:hover {
+        color: #3DA5F5; }
+
 /*
 * MOBILE (<768px)--------------------------------------------------------------
 * fixture-----------------------------------------------sm
