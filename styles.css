@@ -779,6 +779,22 @@ i {
     color: #3F4150;
     font-weight: 700; }
 
+.gnb-icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  font-size: 24px;
+  color: #8C8D96;
+  transition: color 200ms ease-in-out; }
+  .gnb-icon-button.is-menu {
+    color: #3DA5F5; }
+    .gnb-icon-button.is-menu:active {
+      color: #3186C4; }
+  .gnb-icon-button:active {
+    color: #3F4150; }
+
 /*
 * MOBILE (<768px)--------------------------------------------------------------
 * fixture-----------------------------------------------sm
@@ -890,16 +906,8 @@ i {
     display: flex;
     align-items: center;
     justify-content: flex-end; }
-  .gnb-right .gnb-serach-button {
+  .gnb-right .gnb-icon-button.is-serach {
     margin-right: 4px; }
-  .gnb-icon-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 32px;
-    height: 32px;
-    font-size: 24px;
-    color: #8C8D96; }
   .gnb-menu-button {
     color: #3DA5F5; }
   .gnb .logo {
