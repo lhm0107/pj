@@ -533,7 +533,7 @@ li {
     opacity: 0.4; }
 
 .btn-primary {
-  color: #3F4150;
+  color: #FFF;
   background-color: #3DA5F5;
   transition: background-color 200ms ease-in-out; }
   .btn-primary:not(:disabled):hover {
