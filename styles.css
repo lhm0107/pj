@@ -964,6 +964,18 @@ i {
         margin-right: 24px; }
         .gnb-right .button-group .gnb-icon-button {
           margin-right: 8px; }
+        .gnb-right .button-group .gnb-auth {
+          margin-left: 8px; }
+          .gnb-right .button-group .gnb-auth a {
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: -0.01em;
+            color: #8C8D96;
+            font-weight: 700; }
+            .gnb-right .button-group .gnb-auth a:first-child {
+              margin-right: 12px; }
+            .gnb-right .button-group .gnb-auth a::hover {
+              color: #3DA5F5; }
     .gnb-wrapper {
       height: 80px; }
     .gnb .logo {
