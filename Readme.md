@@ -19,12 +19,12 @@
 		<a href="/">로그인</a>
 		<a href="/">회원가입</a>
 	</div>
-</div>
 
 	<button class="btn-primary btn-40 sm-hidden" type="button">
-    글쓰기
-	<i class="ic-chevron" aria-hidden></i>
-  </button>
+    		글쓰기
+		<i class="ic-chevron" aria-hidden></i>
+  	</button>
+</div>			     
 
 - 로그인을 했을경우
 
