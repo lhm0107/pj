@@ -788,17 +788,42 @@ i {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
   width: 32px;
   height: 32px;
   font-size: 24px;
   color: #8C8D96;
-  transition: color 200ms ease-in-out; }
+  border-radius: 50%;
+  transition: color 200ms ease-in-out, background-color 200ms ease-in-out; }
   .gnb-icon-button.is-menu {
     color: #3DA5F5; }
     .gnb-icon-button.is-menu:active {
       color: #3186C4; }
   .gnb-icon-button:active {
     color: #3F4150; }
+  .gnb-icon-button.is-cart i {
+    position: relative;
+    top: 1px;
+    right: 1px; }
+  .gnb-icon-button .badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    height: 16px;
+    min-width: 16px;
+    padding: 0 4px;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: -0.01em;
+    color: #FFF;
+    text-align: center;
+    background-color: #F86D7D;
+    border-radius: 8px; }
+  @media screen and (min-width: 768px) {
+    .gnb-icon-button:hover {
+      color: #FFF;
+      background-color: #3DA5F5; } }
 
 /*
 * MOBILE (<768px)--------------------------------------------------------------
