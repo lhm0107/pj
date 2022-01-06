@@ -22,9 +22,9 @@
 </div>
 
 	<button class="btn-primary btn-40 sm-hidden" type="button">
-									글쓰기
+    글쓰기
 	<i class="ic-chevron" aria-hidden></i>
-
+  </button>
 
 - 로그인을 했을경우
 
