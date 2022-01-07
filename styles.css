@@ -901,8 +901,20 @@ i {
 .drawer-menu.is-active .drawer-menu-button {
   color: #3DA5F5; }
 
-.drawer-menu.is-open .drawer-menu-content {
-  display: block; }
+.drawer-menu.is-open.is-community .drawer-menu-content {
+  max-height: 332px; }
+
+.drawer-menu.is-open.is-store .drawer-menu-content {
+  max-height: 332px; }
+
+.drawer-menu.is-open.is-expert .drawer-menu-content {
+  max-height: 188px; }
+
+.drawer-menu.is-open .drawer-menu-button i:last-child {
+  transform: translateY(-50%) rotate(180deg); }
+
+.drawer-menu.is-open .drawer-menu-list {
+  padding-bottom: 8px; }
 
 .drawer-menu-button {
   display: flex;
@@ -916,7 +928,8 @@ i {
   width: 100%;
   height: 54px;
   padding: 0 8px;
-  font-weight: 700; }
+  font-weight: 700;
+  transition: color 200ms ease-in-out; }
   .drawer-menu-button i:first-child {
     position: relative;
     top: 1px;
@@ -929,10 +942,16 @@ i {
     transform: translateY(-50%);
     right: 8px;
     font-size: 16px;
-    color: #3F4150; }
+    color: #3F4150;
+    transition: transform 200ms ease-in-out; }
 
 .drawer-menu-content {
-  display: none; }
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 200ms ease-in-out; }
+
+.drawer-menu-item.is-active a {
+  color: #3DA5F5; }
 
 .drawer-menu-item a {
   display: flex;
