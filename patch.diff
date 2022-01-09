@@ -1,0 +1,64 @@
+diff --git a/index.html b/index.html
+index 81adbfa..2d85398 100644
+--- a/index.html
++++ b/index.html
+@@ -45,47 +45,9 @@
+ 							</div>
+ 							<!-- Nav Desktop -->
+ 							<div class="gnb-right">
+-								<div class="gnb-search">
+-									<div class="input-group lg-only">
+-										<i class="ic-search" aria-hiden></i>
+-										<input class="form-input" type="text" placeholder="스토어 검색" />
+-									</div>
+-									
+-									<section class="search-history">
+-										<header class="search-history-header">
+-											<h2 class="title">최근검색어</h2>
+-											<button type="button">전체 삭제</button>
+-										</header>
+-									
+-										<!-- NOTE : 최근검색어가 존재 할 경우 -->
+-										<div class="search-history-content">
+-											<ol class="search-history-list">
+-												<li class="search-history-item">
+-													<button class="word-button" type="button">김버그</button>
+-													<button class="delete-button" type="button" aria-label="검색어 삭제">
+-														<i class="ic-close"></i>
+-													</button>
+-												</li>
+-												<li class="search-history-item">
+-													<button class="word-button" type="button">버그</button>
+-													<button class="delete-button" type="button" aria-label="검색어 삭제">
+-														<i class="ic-close"></i>
+-													</button>
+-												</li>
+-												<li class="search-history-item">
+-													<button class="word-button" type="button">튕김버그</button>
+-													<button class="delete-button" type="button" aria-label="검색어 삭제">
+-														<i class="ic-close"></i>
+-													</button>
+-												</li>
+-											</ol>
+-										</div>
+-									
+-										<!-- NOTE : 최근검색어가 없는 경우 -->
+-										<div class="search-history-content">
+-											<p class="placeholder">최근 검색한 내역이 없습니다.</p>
+-										</div>
+-									</section>
++								<div class="input-group lg-only">
++									<i class="ic-search" aria-hiden></i>
++									<input class="form-input" type="text" placeholder="스토어 검색" />
+ 								</div>
+ 									
+ 									<div class="button-group">
+@@ -106,7 +68,7 @@
+ 											<strong class="badge">99</strong>
+ 										</a>
+ 										<!-- my-menu -->
+-										<div class="my-menu sm-hidden">	
++										<div class="my-menu is-active sm-hidden">	
+ 											<button class="my-menu-button" type="button" aria-label="마이메뉴 열기 버튼">
+ 												<img src="./assets/images/img-user-01.jpg" alt="사달라아저씨" />
+ 											</button>
