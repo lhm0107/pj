@@ -1280,7 +1280,10 @@ i {
   padding: 0 8px; }
 
 .search-history-item {
-  position: relative; }
+  position: relative;
+  border-radius: 2px; }
+  .search-history-item:hover {
+    background-color: #F7F8FA; }
   .search-history-item .word-button {
     font-size: 16px;
     line-height: 24px;
@@ -1301,5 +1304,7 @@ i {
     height: 32px;
     font-size: 16px;
     color: #B2B3B9; }
+    .search-history-item .delete-button:hover {
+      color: #3F4150; }
 
 /*# sourceMappingURL=styles.css.map */
