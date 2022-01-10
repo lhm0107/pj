@@ -1367,6 +1367,8 @@ i {
     padding: 0 8px;
     font-weight: 700;
     border-bottom: 2px solid transparent; }
+    .lnb-item a:hover {
+      color: #3DA5F5; }
   @media screen and (min-width: 768px) {
     .lnb {
       height: 50px;

@@ -32,6 +32,10 @@
 			padding: 0 $lnb-link-padding;
 			font-weight: 700;
 			border-bottom: 2px solid transparent;
+
+			&:hover {
+				color: $blue;
+			}
 		}
 	}
 
