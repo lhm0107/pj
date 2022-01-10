@@ -756,6 +756,7 @@ i {
   content: "\e90e"; }
 
 .ic-new:before {
+  color: #F86D7D;
   content: "\e90f"; }
 
 .ic-search:before {
@@ -976,8 +977,7 @@ i {
   font-weight: 700; }
 
 .drawer-menu-item .ic-new {
-  font-size: 16px;
-  color: #F86D7D; }
+  font-size: 16px; }
 
 /*
 * MOBILE (<768px)--------------------------------------------------------------
@@ -1079,13 +1079,13 @@ i {
         width: 1140px; } }
 
 .gnb {
-  position: relative; }
+  position: relative;
+  border-bottom: 1px solid #E0E2E7; }
   .gnb-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 50px;
-    border-bottom: 1px solid #E0E2E7; }
+    height: 50px; }
   .gnb-right .button-group {
     display: flex;
     align-items: center;
@@ -1178,6 +1178,8 @@ i {
   transform: translate3d(-240px, 0, 0);
   transition: transform 300ms ease-in-out;
   overscroll-behavior: contain; }
+  .sidebar::-webkit-scrollbar {
+    display: none !important; }
   .sidebar.is-active {
     transform: translate3d(0, 0, 0); }
   .sidebar-header {
@@ -1241,8 +1243,6 @@ i {
       padding: 0 12px; }
       .sidebar-user-menu .user-menu-item a:active {
         color: #3DA5F5; }
-  .sidebar::-webkit-scrollbar {
-    display: none; }
 
 .overlay {
   position: fixed;
@@ -1338,17 +1338,18 @@ i {
       color: #3F4150; }
 
 .lnb {
-  overflow-x: auto;
-  border-bottom: 1px solid #E0E2E7; }
+  overflow-x: auto; }
   .lnb::-webkit-scrollbar {
-    display: none; }
+    display: none !important; }
   .lnb-list {
     display: inline-flex;
     align-items: center;
     justify-content: flex-start;
-    position: relative;
-    left: -8px;
-    white-space: nowrap; }
+    height: 40px;
+    margin-left: -23px;
+    padding: 0 7px;
+    white-space: nowrap;
+    border-bottom: 1px solid #E0E2E7; }
   .lnb-item.is-active a {
     color: #3DA5F5;
     border-bottom-color: #3DA5F5; }
@@ -1364,7 +1365,5 @@ i {
     padding: 0 8px;
     font-weight: 700;
     border-bottom: 2px solid transparent; }
-  .lnb-item .ic-new {
-    color: #F86D7D; }
 
 /*# sourceMappingURL=styles.css.map */

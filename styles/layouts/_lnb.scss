@@ -1,16 +1,17 @@
 .lnb {
+	$lnb-link-padding: 8px;
+	$grid-margin: $sm-margin + $gutter / 2;
+	@include no-scrollbar;
 	overflow-x: auto;
-	border-bottom: 1px solid $border;
-
-	&::-webkit-scrollbar {
-		display: none;
-	}
+	
 
 	&-list {
 		@include inline-flexbox(start);
-		position: relative;
-		left: -8px;
+		height: 40px;
+		margin-left: -#{$grid-margin + $lnb-link-padding};
+		padding: 0 #{$grid-margin - $lnb-link-padding};
 		white-space: nowrap;
+		border-bottom: 1px solid $border;
 	}
 
 	&-item {
@@ -25,13 +26,9 @@
 			@include inline-flexbox;
 			@include text-style(13, $dark);
 			height: 40px;
-			padding: 0 8px;
+			padding: 0 $lnb-link-padding;
 			font-weight: 700;
 			border-bottom: 2px solid transparent;
-		}
-
-		.ic-new {
-			color: $red;
 		}
 	}
 }
