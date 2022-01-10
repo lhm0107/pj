@@ -787,7 +787,8 @@ i {
     color: #3F4150;
     display: block;
     padding: 8px;
-    font-weight: 700; }
+    font-weight: 700;
+    white-space: nowrap; }
 
 .gnb-icon-button {
   display: flex;
@@ -1345,6 +1346,7 @@ i {
     display: inline-flex;
     align-items: center;
     justify-content: flex-start;
+    width: 100vh;
     height: 40px;
     margin-left: -23px;
     padding: 0 7px;
@@ -1365,5 +1367,20 @@ i {
     padding: 0 8px;
     font-weight: 700;
     border-bottom: 2px solid transparent; }
+  @media screen and (min-width: 768px) {
+    .lnb {
+      height: 50px;
+      overflow-x: visible;
+      border-bottom: 1px solid #E0E2E7; }
+      .lnb-list {
+        height: auto;
+        padding: 0;
+        margin-left: 0;
+        border-bottom: none; }
+      .lnb-item a {
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: -0.01em;
+        height: 50px; } }
 
 /*# sourceMappingURL=styles.css.map */

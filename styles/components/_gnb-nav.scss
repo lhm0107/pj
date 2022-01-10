@@ -20,10 +20,11 @@
     }
 
     a {
-      @include text-style(18,$primary);
+      @include text-style(18, $primary);
       display: block;
       padding: $padding;
       font-weight: 700;
+      white-space: nowrap;
     }
   }
 }
