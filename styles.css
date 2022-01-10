@@ -1338,7 +1338,8 @@ i {
       color: #3F4150; }
 
 .lnb {
-  overflow-x: auto; }
+  overflow-x: auto;
+  border-bottom: 1px solid #E0E2E7; }
   .lnb::-webkit-scrollbar {
     display: none; }
   .lnb-list {
