@@ -5,7 +5,6 @@
 	$grid-margin: $sm-margin + $gutter / 2;
 	@include no-scrollbar;
 	overflow-x: auto;
-	
 
 	&-list {
 		@include inline-flexbox(start);
@@ -43,14 +42,14 @@
 		height: $lnb-height-md;
 		overflow-x: visible;
 		border-bottom: 1px solid $border;
-		&-list{
+		&-list {
 			height: auto;
 			padding: 0;
 			margin-left: 0;
 			border-bottom: none;
 		}
-		&-item{
-			a{
+		&-item {
+			a {
 				@include text-style(14);
 				height: $lnb-height-md;
 			}
