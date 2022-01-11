@@ -1,10 +1,11 @@
 .gnb {
 	position: relative;
 	border-bottom: 1px solid $border;
+	background-color: $white;
 
 	&-wrapper {
 		@include flexbox(between);
-		height: 50px;
+		height: $gnb-height-sm - 1px;
 	}
 
 	&-right {
@@ -39,6 +40,10 @@
 			@include flexbox(start);
 		}
 
+		&-wrapper {
+			height: $gnb-height-md - 1px;
+		}
+
 		&-right {
 			@include flexbox(end);
 
@@ -66,10 +71,6 @@
 					}
 				}
 			}
-		}
-
-		&-wrapper {
-			height: 80px;
 		}
 
 		.logo {
