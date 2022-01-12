@@ -1036,11 +1036,16 @@ i {
       align-items: center;
       justify-content: center;
       margin: 0 4px; }
+      .product-carousel-thumbnail .thumbnail-item.tns-nav-active button {
+        transform: scale(1.33333);
+        opacity: 1; }
       .product-carousel-thumbnail .thumbnail-item button {
         width: 6px;
         height: 6px;
-        background-color: rgba(255, 255, 255, 0.7);
-        border-radius: 50%; }
+        background-color: #FFF;
+        opacity: 0.7;
+        border-radius: 50%;
+        transition: transform 100ms ease-in-out,opacity 100ms ease-in-out; }
       .product-carousel-thumbnail .thumbnail-item img {
         display: none; }
   .product-carousel img {
