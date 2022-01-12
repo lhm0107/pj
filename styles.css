@@ -1018,6 +1018,13 @@ i {
       .breadcrumb a:hover {
         opacity: 0.4; } }
 
+.product-carousel-thumbnail {
+  display: none; }
+
+.product-carousel img {
+  width: 100%;
+  height: auto; }
+
 /*
 * MOBILE (<768px)--------------------------------------------------------------
 * fixture-----------------------------------------------sm
