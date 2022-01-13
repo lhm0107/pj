@@ -1290,6 +1290,11 @@ i {
       .order-form .button-group button:last-child {
         margin-right: 0; }
 
+.checkout-card {
+  padding: 8px 10px 8px 12px;
+  background-color: #F7F8FA;
+  border-radius: 4px; }
+
 /*
 * MOBILE (<768px)--------------------------------------------------------------
 * fixture-----------------------------------------------sm
