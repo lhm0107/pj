@@ -2,15 +2,15 @@
 	$lnb-link-padding: 8px;
 	$grid-margin: $sm-margin + $gutter / 2;
 	@include no-scrollbar;
-	background-color: $white;
 	overflow-x: auto;
+	background-color: $white;
 
 	&-list {
 		@include inline-flexbox(start);
 		width: 100vh;
 		height: $lnb-height-sm;
-		margin-left: -#{$grid-margin + $lnb-link-padding};
 		padding: 0 #{$grid-margin - $lnb-link-padding};
+		margin-left: -#{$grid-margin + $lnb-link-padding};
 		white-space: nowrap;
 		border-bottom: 1px solid $border;
 	}
@@ -45,7 +45,7 @@
 			height: auto;
 			padding: 0;
 			margin-left: 0;
-			border-bottom: none;
+			border-bottom: 0;
 		}
 		&-item {
 			a {
