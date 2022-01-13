@@ -76,6 +76,7 @@
 	}
 
 	&-delivery {
+		@include text-style(16, $primary);
 		padding-top: 12px;
 		border-top: 1px solid $border;
 
@@ -107,6 +108,46 @@
 					margin-right: -3px;
 				}
 			}
+		}
+
+		&-price {
+			.info-price-wrapper {
+				margin-bottom: 12px;
+				@include flexbox(start, end);
+
+				.discount-rate {
+					align-items: flex-end;
+					margin-right: 16px;
+					.rate {
+						font-size: 44px;
+						line-height: 36px;
+					}
+					.percent {
+						line-height: 20px;
+					}
+				}
+
+				.info-sale-price {
+					margin-bottom: 0;
+
+					.price-32 {
+						margin-right: 8px;
+					}
+				}
+			}
+
+			.info-point {
+				margin-bottom: 20px;
+			}
+		}
+	}
+	&-delivery {
+		padding-top: 16px;
+		padding-bottom: 20px;
+		border-bottom: 1px solid $border;
+
+		span {
+			padding-bottom: 8px;
 		}
 	}
 }
