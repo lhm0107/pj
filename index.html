@@ -376,10 +376,56 @@
 								<strong class="tag-gray">무료배송</strong>
 							</div>
 						</section>
+						<!-- order-form desktop only -->
+						<form class="order-form lg-only" action="/" method="post">
+							<div class="order-inputs">
+								<div class="select-group is-active">
+									<select id="select-1"class="form-select" required>
+										<option value="">선택</option>
+										<option value="1">선택사항1</option>
+										<option value="2">선택사항2</option>
+										<option value="3">선택사항3</option>
+										<option value="4">선택사항4</option>
+										<option value="5">선택사항5</option>
+									</select>
+									<i class="ic-caret" aria-hidden></i>
+								</div>
+								<div class="select-group">
+									<select id="select-2" class="form-select">
+										<option value="">추가상품 (선택)</option>
+										<option value="1">선택사항1</option>
+										<option value="2">선택사항2</option>
+										<option value="3">선택사항3</option>
+										<option value="4">선택사항4</option>
+										<option value="5">선택사항5</option>
+									</select>
+									<i class="ic-caret" aria-hidden></i>
+								</div>
+							</div>
+				
+							<dl class="order-summary">
+								<dt>주문금액</dt>
+								<dd>
+									<output for="select-1 select-2">
+										<div class="price-20">
+											<strong class="amount"> 0 </strong>
+											<span class="currency"> 원 </span>
+										</div>
+									</output>
+								</dd>
+							</dl>
+				
+							<div class="button-group">
+								<button type="button" class="btn-outlined btn-55">장바구니</button>
+								<button type="submit" class="btn-primary btn-55">장바구니</button>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
 		</main>
+
+		
 
 		<footer class="global-footer">
 			<div class="container">
