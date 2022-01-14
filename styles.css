@@ -1263,17 +1263,26 @@ i {
 
 .order-form {
   margin-bottom: 40px; }
-  .order-form .order-inputs {
+  .order-form .order-inputs,
+  .order-form .order-summary,
+  .order-form .order-checkouts {
     margin-bottom: 20px; }
-    .order-form .order-inputs .selct-group {
+    .order-form .order-inputs .selct-group,
+    .order-form .order-summary .selct-group,
+    .order-form .order-checkouts .selct-group {
       margin-bottom: 8px; }
-      .order-form .order-inputs .selct-group:last-child {
+      .order-form .order-inputs .selct-group:last-child,
+      .order-form .order-summary .selct-group:last-child,
+      .order-form .order-checkouts .selct-group:last-child {
         margin-bottom: 8px; }
+  .order-form .order-checkouts .checkout-item {
+    margin-bottom: 8px; }
+    .order-form .order-checkouts .checkout-item .checkout-item:last-child {
+      margin-bottom: 0; }
   .order-form .order-summary {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px; }
+    justify-content: space-between; }
     .order-form .order-summary dt {
       font-size: 13px;
       line-height: 20px;
@@ -1353,12 +1362,10 @@ i {
       pointer-events: none;
       transition: color 100ms ease-in-out; }
   @media screen and (min-width: 1200px) {
-    .checkout-card {
-      margin-bottom: 20px; }
-      .checkout-card .checkout-title {
-        font-size: 16px;
-        line-height: 24px;
-        letter-spacing: -0.01em; } }
+    .checkout-card .checkout-title {
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.01em; } }
 
 /*
 * MOBILE (<768px)--------------------------------------------------------------
