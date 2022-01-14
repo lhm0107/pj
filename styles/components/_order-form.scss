@@ -1,7 +1,9 @@
 .order-form {
 	margin-bottom: 40px;
 
-	.order-inputs {
+	.order-inputs,
+	.order-summary,
+	.order-checkouts {
 		margin-bottom: 20px;
 
 		.selct-group {
@@ -13,9 +15,18 @@
 		}
 	}
 
+	.order-checkouts {
+		.checkout-item {
+			margin-bottom: 8px;
+
+			.checkout-item:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
 	.order-summary {
 		@include flexbox(between);
-		margin-bottom: 20px;
 
 		dt {
 			@include text-style(13, $dark);
