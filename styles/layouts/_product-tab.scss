@@ -37,8 +37,31 @@
 
 		.badge {
 			@include text-style(12, $secondary);
-			margin-left: 8px;
+			margin-left: 4px;
 			font-weight: 700;
+		}
+	}
+
+	@include responsive(T) {
+		height: 54px;
+		background-color: $background;
+		border-bottom: 0;
+
+		&-item {
+			button {
+				@include text-style(16);
+				height: 54px;
+			}
+
+			.badge {
+				margin-left: 8px;
+			}
+		}
+	}
+
+	@include responsive(D) {
+		&-item button:hover {
+			color: $blue;
 		}
 	}
 }
