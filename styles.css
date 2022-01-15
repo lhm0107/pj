@@ -1939,4 +1939,42 @@ i {
       padding: 0 8px;
       content: '|'; } }
 
+.product-tab {
+  width: 100%;
+  height: 40px;
+  background-color: #FFF;
+  border-bottom: 1px solid #E0E2E7; }
+  .product-tab-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 -15px; }
+  .product-tab-item {
+    width: 20%; }
+    .product-tab-item.is-active button {
+      color: #3DA5F5;
+      border-bottom: 2px solid #3DA5F5; }
+    .product-tab-item button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      line-height: 20px;
+      letter-spacing: -0.01em;
+      color: #191A20;
+      width: 100%;
+      height: 40px;
+      font-weight: 700;
+      white-space: normal;
+      border-bottom: 2px solid transparent; }
+      .product-tab-item button:active {
+        color: #3DA5F5; }
+    .product-tab-item .badge {
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: -0.005em;
+      color: #8C8D96;
+      margin-left: 8px;
+      font-weight: 700; }
+
 /*# sourceMappingURL=styles.css.map */
