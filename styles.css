@@ -1941,6 +1941,8 @@ i {
       content: '|'; } }
 
 .product-tab {
+  position: sticky;
+  top: 90px;
   width: 100%;
   height: 40px;
   background-color: #FFF;
@@ -1979,6 +1981,7 @@ i {
       font-weight: 700; }
   @media screen and (min-width: 768px) {
     .product-tab {
+      top: 130px;
       height: 54px;
       background-color: #F7F8FA;
       border-bottom: 0; }
