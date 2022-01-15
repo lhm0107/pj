@@ -1080,7 +1080,8 @@ i {
     height: auto; }
   @media screen and (min-width: 768px) {
     .product-carousel {
-      padding-right: 30px; }
+      padding-right: 30px;
+      margin-bottom: 40px; }
       .product-carousel-slider {
         margin: 0 0 8px 0;
         overflow: hidden;
@@ -1219,8 +1220,7 @@ i {
       margin-bottom: 2px; }
   @media screen and (min-width: 768px) {
     .product-info {
-      padding: 0;
-      margin-bottom: 40px; }
+      padding: 0; }
       .product-info-header .info-brand {
         display: inline-block;
         margin-bottom: 8px; }
@@ -1982,6 +1982,8 @@ i {
       height: 54px;
       background-color: #F7F8FA;
       border-bottom: 0; }
+      .product-tab-list {
+        margin: 0; }
       .product-tab-item button {
         font-size: 16px;
         line-height: 24px;
