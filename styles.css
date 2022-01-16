@@ -1368,6 +1368,23 @@ i {
       line-height: 24px;
       letter-spacing: -0.01em; } }
 
+.product-section-divider {
+  height: 8px;
+  margin: 0 -15px;
+  background-color: #E0E2E7; }
+
+@media screen and (min-width: 768px) {
+  .product-section {
+    width: 100%;
+    max-width: 692px;
+    padding-bottom: 80px;
+    margin-right: auto;
+    margin-left: auto; } }
+
+@media screen and (min-width: 1200px) {
+  .product-section {
+    margin-left: 0; } }
+
 .product-section-header {
   position: relative;
   display: flex;
@@ -1455,6 +1472,15 @@ i {
       letter-spacing: -0.02em; }
       .product-table th {
         width: 164px; } }
+
+.product-spec {
+  padding: 20px 0; }
+  .product-spec .button-wrapper {
+    display: none; }
+  .product-spec figure img {
+    display: block;
+    width: 100%;
+    height: auto; }
 
 /*
 * MOBILE (<768px)--------------------------------------------------------------
@@ -1943,6 +1969,7 @@ i {
 .product-tab {
   position: sticky;
   top: 90px;
+  z-index: 30;
   width: 100%;
   height: 40px;
   background-color: #FFF;
