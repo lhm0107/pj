@@ -1473,13 +1473,19 @@ i {
       .product-table th {
         width: 164px; } }
 
-.product-spec .button-wrapper {
-  display: none; }
-
-.product-spec figure img {
-  display: block;
-  width: 100%;
-  height: auto; }
+.product-spec {
+  padding-top: 20px; }
+  .product-spec .button-wrapper {
+    display: none; }
+  .product-spec .product-table {
+    margin-top: 20px; }
+  .product-spec figure img {
+    display: block;
+    width: 100%;
+    height: auto; }
+  @media screen and (min-width: 768px) {
+    .product-spec .product-table {
+      margin-top: 40px; } }
 
 /*
 * MOBILE (<768px)--------------------------------------------------------------
