@@ -1,7 +1,9 @@
 .product-section {
+	padding-bottom: 20px;
+
 	&-divider {
 		height: 8px;
-		margin: 0 -15px; // TODO : grid constants로 빼기
+		margin: 0 -#{$grid-margin};
 		background-color: $border;
 	}
 
