@@ -1510,6 +1510,88 @@ i {
     .product-spec .product-table {
       margin-top: 40px; } }
 
+.review-scoreboard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 152px;
+  background-color: #F7F8FA;
+  border-radius: 4px; }
+  .review-scoreboard .score-summary,
+  .review-scoreboard .score-detail {
+    width: 50%; }
+  .review-scoreboard .score-summary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    order: 1; }
+    .review-scoreboard .score-summary .average-score {
+      font-size: 24px;
+      line-height: 34px;
+      letter-spacing: -0.01em;
+      color: #191A20;
+      display: block;
+      margin-bottom: 4px; }
+    .review-scoreboard .score-summary .star-rating {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      font-size: 20px; }
+      .review-scoreboard .score-summary .star-rating .ic-star {
+        color: #E0E2E7; }
+        .review-scoreboard .score-summary .star-rating .ic-star.is-active {
+          color: #3DA5F5; }
+  .review-scoreboard .score-detail {
+    order: 3;
+    text-align: center; }
+  .review-scoreboard::before {
+    display: block;
+    order: 2;
+    width: 1px;
+    height: 96px;
+    background-color: #E0E2E7;
+    content: ''; }
+
+.score-statistics-list {
+  display: inline-block; }
+
+.score-statistics-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.005em;
+  color: #8C8D96;
+  margin-bottom: 4px; }
+  .score-statistics-item.is-active {
+    font-weight: 700;
+    color: #3DA5F5; }
+  .score-statistics-item:last-child {
+    margin-bottom: 0; }
+  .score-statistics-item dt {
+    margin-right: 4px; }
+  .score-statistics-item dd {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .score-statistics-item dd .bar-graph {
+      width: 70px;
+      height: 5px;
+      margin-right: 4px;
+      overflow: hidden;
+      background-color: #E0E2E7;
+      border-radius: 2.5px; }
+      .score-statistics-item dd .bar-graph .active-bar {
+        width: 30px;
+        height: 5px;
+        background-color: #3DA5F5;
+        border-radius: 2.5px; }
+    .score-statistics-item dd .count {
+      font-weight: 400; }
+
 /*
 * MOBILE (<768px)--------------------------------------------------------------
 * fixture-----------------------------------------------sm
