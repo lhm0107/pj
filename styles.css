@@ -1553,6 +1553,23 @@ i {
     height: 96px;
     background-color: #E0E2E7;
     content: ''; }
+  @media screen and (min-width: 768px) {
+    .review-scoreboard {
+      height: 148px;
+      padding: 0 72px; }
+      .review-scoreboard::before {
+        height: 72px;
+        margin: 0 69px; }
+      .review-scoreboard .score-summary,
+      .review-scoreboard .score-detail {
+        width: auto; }
+      .review-scoreboard .score-summary {
+        flex-direction: row-reverse; }
+        .review-scoreboard .score-summary .average-score {
+          margin-bottom: 0; }
+        .review-scoreboard .score-summary .star-rating {
+          margin-right: 16px;
+          font-size: 24px; } }
 
 .score-statistics-list {
   display: inline-block; }
@@ -1591,6 +1608,13 @@ i {
         border-radius: 2.5px; }
     .score-statistics-item dd .count {
       font-weight: 400; }
+
+@media screen and (min-width: 768px) {
+  .score-statistics-item dt {
+    margin-right: 8px; }
+  .score-statistics-item dd .bar-graph {
+    width: 180px;
+    margin-right: 8px; } }
 
 /*
 * MOBILE (<768px)--------------------------------------------------------------

@@ -45,4 +45,18 @@
 			}
 		}
 	}
+
+	@include responsive(T) {
+		&-item {
+			dt {
+				margin-right: 8px;
+			}
+			dd {
+				.bar-graph {
+					width: 180px;
+					margin-right: 8px;
+				}
+			}
+		}
+	}
 }
