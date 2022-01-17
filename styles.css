@@ -1709,10 +1709,25 @@ i {
       height: 112px;
       margin-bottom: 16px; } }
 
+.product-review .review-empty {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  color: #8C8D96;
+  padding: 36px 0;
+  text-align: center; }
+  .product-review .review-empty strong {
+    font-weight: 700;
+    color: #3DA5F5; }
+
 .product-review .review-item {
   border-bottom: 1px solid #E0E2E7; }
   .product-review .review-item:last-child {
     border-bottom: 0; }
+
+@media screen and (min-width: 768px) {
+  .product-review {
+    padding: 16px 0; } }
 
 /*
 * MOBILE (<768px)--------------------------------------------------------------
