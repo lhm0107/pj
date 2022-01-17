@@ -69,6 +69,13 @@
 		button {
 			width: 120px;
 			margin-right: 8px;
+
+			i {
+				margin-right: 4px;
+				margin-left: -4px;
+				font-size: 20px;
+				color: $white;
+			}
 		}
 
 		p {

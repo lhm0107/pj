@@ -1673,6 +1673,11 @@ i {
     .review-card-footer button {
       width: 120px;
       margin-right: 8px; }
+      .review-card-footer button i {
+        margin-right: 4px;
+        margin-left: -4px;
+        font-size: 20px;
+        color: #FFF; }
     .review-card-footer p {
       font-size: 12px;
       line-height: 16px;
