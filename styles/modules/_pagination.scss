@@ -8,18 +8,24 @@
 }
 
 .pagenation {
+	@include flexbox;
+
 	.page-control {
 		@extend %page-item-base;
 		width: 26px;
 		border: 1px solid $border;
 
 		&.page-prev {
+			margin-right: 24px;
+
 			.ic-chevron {
 				transform: rotate(90deg);
 			}
 		}
 
 		&.page-next {
+			margin-left: 24px;
+
 			.ic-chevron {
 				transform: rotate(-90deg);
 			}
@@ -28,22 +34,9 @@
 		&:hover {
 			opacity: 0.4;
 		}
+
 		.ic-chevron {
 			font-size: 20px;
-		}
-	}
-}
-
-.pagenation {
-	@include flexbox;
-
-	.page-control {
-		&.page-prev {
-			margin-right: 24px;
-		}
-
-		&.page-next {
-			margin-left: 24px;
 		}
 	}
 
@@ -70,7 +63,7 @@
 		button {
 			@extend %page-item-base;
 			min-width: 26px;
-			background-color: $white;
+			padding: 0 4px 2px;
 
 			&:hover {
 				color: $blue;
