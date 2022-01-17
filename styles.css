@@ -687,26 +687,25 @@ address {
   background-color: #FFF;
   border-radius: 4px; }
 
-.pagenation .page-control {
-  width: 26px;
-  border: 1px solid #E0E2E7; }
-  .pagenation .page-control.page-prev .ic-chevron {
-    transform: rotate(90deg); }
-  .pagenation .page-control.page-next .ic-chevron {
-    transform: rotate(-90deg); }
-  .pagenation .page-control:hover {
-    opacity: 0.4; }
-  .pagenation .page-control .ic-chevron {
-    font-size: 20px; }
-
 .pagenation {
   display: flex;
   align-items: center;
   justify-content: center; }
-  .pagenation .page-control.page-prev {
-    margin-right: 24px; }
-  .pagenation .page-control.page-next {
-    margin-left: 24px; }
+  .pagenation .page-control {
+    width: 26px;
+    border: 1px solid #E0E2E7; }
+    .pagenation .page-control.page-prev {
+      margin-right: 24px; }
+      .pagenation .page-control.page-prev .ic-chevron {
+        transform: rotate(90deg); }
+    .pagenation .page-control.page-next {
+      margin-left: 24px; }
+      .pagenation .page-control.page-next .ic-chevron {
+        transform: rotate(-90deg); }
+    .pagenation .page-control:hover {
+      opacity: 0.4; }
+    .pagenation .page-control .ic-chevron {
+      font-size: 20px; }
   .pagenation .page-list {
     display: flex;
     align-items: center;
@@ -722,7 +721,7 @@ address {
     .pagenation .page-item a,
     .pagenation .page-item button {
       min-width: 26px;
-      background-color: #FFF; }
+      padding: 0 4px 2px; }
       .pagenation .page-item a:hover,
       .pagenation .page-item button:hover {
         color: #3DA5F5; }
@@ -1709,6 +1708,11 @@ i {
       width: 112px;
       height: 112px;
       margin-bottom: 16px; } }
+
+.product-review .review-item {
+  border-bottom: 1px solid #E0E2E7; }
+  .product-review .review-item:last-child {
+    border-bottom: 0; }
 
 /*
 * MOBILE (<768px)--------------------------------------------------------------
