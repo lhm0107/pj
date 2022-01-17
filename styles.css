@@ -1602,7 +1602,7 @@ i {
       background-color: #E0E2E7;
       border-radius: 2.5px; }
       .score-statistics-item dd .bar-graph .active-bar {
-        width: 30px;
+        width: 0;
         height: 5px;
         background-color: #3DA5F5;
         border-radius: 2.5px; }
