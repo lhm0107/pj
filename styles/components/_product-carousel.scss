@@ -1,5 +1,4 @@
 .product-carousel {
-	$grid-margin: 15px;
 	position: relative;
 
 	&-slider {
@@ -10,6 +9,7 @@
 		@include position-center-x;
 		bottom: 16px;
 	}
+
 	.thumbnail-list {
 		@include flexbox;
 	}
@@ -47,6 +47,7 @@
 
 	@include responsive(T) {
 		padding-right: 30px;
+		margin-bottom: 40px;
 
 		&-slider {
 			margin: 0 0 8px 0;
@@ -115,9 +116,11 @@
 		.thumbnail-list {
 			flex-direction: column;
 		}
+
 		.thumbnail-item {
 			margin-right: 0;
 			margin-bottom: 8px;
+
 			button,
 			img {
 				width: 75px;
