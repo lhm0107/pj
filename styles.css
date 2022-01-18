@@ -1779,7 +1779,14 @@ i {
         font-weight: 700;
         color: #3DA5F5; }
       .inquiry-card-body .question-content p {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
         color: #3F4150; }
+        .inquiry-card-body .question-content p i {
+          margin-right: 8px;
+          font-size: 16px;
+          color: #B2B3B9; }
   @media screen and (min-width: 768px) {
     .inquiry-card-header {
       margin-bottom: 20px; }
