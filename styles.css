@@ -1749,14 +1749,14 @@ i {
       display: flex;
       align-items: center;
       justify-content: flex-start; }
-      .inquiry-card-header .detail dl::after,
+      .inquiry-card-header .detail dd::after,
       .inquiry-card-header .detail strong::after,
-      .inquiry-card-header .misc dl::after,
+      .inquiry-card-header .misc dd::after,
       .inquiry-card-header .misc strong::after {
         margin: 0 4px;
         content: '|'; }
-      .inquiry-card-header .detail dl:last-child::after,
-      .inquiry-card-header .misc dl:last-child::after {
+      .inquiry-card-header .detail dd:last-child::after,
+      .inquiry-card-header .misc dd:last-child::after {
         content: none; }
     .inquiry-card-header .detail {
       margin-bottom: 8px;
@@ -1769,24 +1769,38 @@ i {
     font-size: 13px;
     line-height: 20px;
     letter-spacing: -0.01em; }
-    .inquiry-card-body .question-content {
+    .inquiry-card-body .inquiry-content {
       position: relative;
       padding-left: 20px; }
-      .inquiry-card-body .question-content span {
-        position: absolute;
-        top: 0;
-        left: 0;
-        font-weight: 700;
-        color: #3DA5F5; }
-      .inquiry-card-body .question-content p {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        color: #3F4150; }
-        .inquiry-card-body .question-content p i {
-          margin-right: 8px;
-          font-size: 16px;
-          color: #B2B3B9; }
+      .inquiry-card-body .inquiry-content:first-child :not(last-child) {
+        margin-bottom: 12px; }
+    .inquiry-card-body .seller {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 4px; }
+      .inquiry-card-body .seller strong {
+        margin-right: 4px; }
+      .inquiry-card-body .seller time {
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: -0.005em;
+        color: #B2B3B9; }
+    .inquiry-card-body span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-weight: 700;
+      color: #3DA5F5; }
+    .inquiry-card-body p {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      color: #3F4150; }
+      .inquiry-card-body p i {
+        margin-right: 8px;
+        font-size: 16px;
+        color: #B2B3B9; }
   @media screen and (min-width: 768px) {
     .inquiry-card-header {
       margin-bottom: 20px; }
@@ -1794,8 +1808,15 @@ i {
       font-size: 16px;
       line-height: 24px;
       letter-spacing: -0.01em; }
-      .inquiry-card-body .question-content {
-        padding-left: 24px; } }
+      .inquiry-card-body .inquiry-content {
+        padding-left: 24px; }
+        .inquiry-card-body .inquiry-content:first-child :not(last-child) {
+          margin-bottom: 16px; }
+      .inquiry-card-body .seller {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.01em;
+        margin-bottom: 8px; } }
 
 /*
 * MOBILE (<768px)--------------------------------------------------------------
