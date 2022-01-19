@@ -1843,6 +1843,16 @@ i {
   .product-inquiry .inquiry-empty {
     padding: 28px 0; } }
 
+@media screen and (max-width: 767px) {
+  .product-shipment .product-section,
+  .product-shipment .product-section-divider:last-child {
+    display: none; }
+  .product-shipment.is-open .product-section,
+  .product-shipment.is-open .product-section-divider:last-child {
+    display: block; }
+  .product-shipment.is-open .product-section-header.sm-only {
+    display: none; } }
+
 /*
 * MOBILE (<768px)--------------------------------------------------------------
 * fixture-----------------------------------------------sm
