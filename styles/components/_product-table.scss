@@ -30,7 +30,9 @@
 	}
 
 	@include responsive(T) {
-		@include text-style(18);
+		tr {
+			@include text-style(14);
+		}
 
 		th {
 			width: $table-th-width-md + $table-cell-padding;
