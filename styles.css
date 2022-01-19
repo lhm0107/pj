@@ -1817,6 +1817,14 @@ i {
         letter-spacing: -0.01em;
         margin-bottom: 8px; } }
 
+.product-inquiry .inquiry-empty {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  color: #8C8D96;
+  padding: 48px 0;
+  text-align: center; }
+
 @media screen and (max-width: 767px) {
   .product-inquiry {
     padding-bottom: 0; }
@@ -1830,6 +1838,10 @@ i {
     .product-inquiry .product-section-header .text-button,
     .product-inquiry .product-section-content {
       display: none; } }
+
+@media screen and (min-width: 768px) {
+  .product-inquiry .inquiry-empty {
+    padding: 28px 0; } }
 
 /*
 * MOBILE (<768px)--------------------------------------------------------------
