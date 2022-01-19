@@ -1853,6 +1853,84 @@ i {
   .product-shipment.is-open .product-section-header.sm-only {
     display: none; } }
 
+.product-card-image {
+  margin-bottom: 8px;
+  overflow: hidden;
+  border-radius: 4px; }
+  .product-card-image img {
+    display: block;
+    width: 100%;
+    height: auto; }
+
+.product-card-brand {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.005em;
+  color: #8C8D96;
+  display: block;
+  margin-bottom: 4px; }
+
+.product-card-title {
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  color: #191A20;
+  font-weight: 400;
+  line-height: 16px; }
+
+.product-card-price {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 4px; }
+  .product-card-price .percent,
+  .product-card-price .price {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    font-weight: 700; }
+  .product-card-price .percent {
+    margin-right: 8px;
+    color: #3DA5F5; }
+  .product-card-price .price {
+    color: #191A20; }
+
+.product-card-detail {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 8px; }
+  .product-card-detail .rating,
+  .product-card-detail .review {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; }
+  .product-card-detail dt {
+    margin-right: 2px; }
+  .product-card-detail .rating {
+    margin-right: 8px; }
+    .product-card-detail .rating dt {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 12px;
+      height: 12px; }
+      .product-card-detail .rating dt i {
+        font-size: 12px;
+        color: #3DA5F5; }
+    .product-card-detail .rating dd {
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: -0.005em;
+      color: #3F4150;
+      font-weight: 700; }
+  .product-card-detail .review {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.005em;
+    color: #8C8D96;
+    font-weight: 700; }
+
 /*
 * MOBILE (<768px)--------------------------------------------------------------
 * fixture-----------------------------------------------sm
