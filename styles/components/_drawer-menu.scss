@@ -27,6 +27,7 @@
 				max-height: _caculate-max-content-height($store-length);
 			}
 		}
+
 		&.is-expert {
 			.drawer-menu-content {
 				max-height: _caculate-max-content-height($expert-length);
