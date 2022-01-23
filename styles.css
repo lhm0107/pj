@@ -2021,6 +2021,12 @@ i {
       padding-right: 8px;
       font-weight: 700; }
 
+.user-gallery {
+  margin: 0 -15px; }
+  @media screen and (min-width: 768px) {
+    .user-gallery {
+      margin: 0 0; } }
+
 /*
 * MOBILE (<768px)--------------------------------------------------------------
 * fixture-----------------------------------------------sm
