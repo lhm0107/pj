@@ -2697,4 +2697,47 @@ i {
     flex-grow: 1;
     margin-right: 4px; }
 
+.order-form-modal {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 400;
+  display: none;
+  width: 100%;
+  max-height: 75vh;
+  padding-top: 16px;
+  overflow-y: auto;
+  background-color: #FFF;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+  overscroll-behavior: contain; }
+  .order-form-modal.is-open {
+    display: block;
+    animation: modal-fade-in 300ms; }
+  .order-form-modal .order-checkouts,
+  .order-form-modal .order-summary {
+    margin-bottom: 16px; }
+  .order-form-modal .order-summary {
+    margin-bottom: 72px; }
+  .order-form-modal .order-inputs {
+    margin-bottom: 8px; }
+  .order-form-modal .button-group {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 4px;
+    padding-top: 0;
+    color: #FFF; }
+  @media screen and (min-width: 768px) {
+    .order-form-modal {
+      padding-top: 32px; } }
+
+@keyframes modal-fade-in {
+  0% {
+    transform: translate3d(0, 100%, 0); }
+  100% {
+    transform: translate3d(0, 0, 0); } }
+
 /*# sourceMappingURL=styles.css.map */

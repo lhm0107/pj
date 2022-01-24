@@ -798,9 +798,7 @@
 							</div>
 						</div>
 					</section>
-			</div>
-		</div>	
-
+			
 					<section class="product-section product-spec is-open" id="product-spec" role="tabpanel">
 						<header class="product-section-header sm-hidden">
 							<h2 class="title">상품정보</h2>
@@ -1902,7 +1900,7 @@
 		</div>
 	</aside>
 
-	<aside class="order-form-modal lg-hidden">
+	<aside class="order-form-modal is-open lg-hidden">
 		<h2 class="visually-hidden">주문창</h2>
 
 		<form class="order-form" action="/" method="post">
@@ -1921,6 +1919,8 @@
 								</select>
 								<i class="ic-caret" aria-hidden></i>
 							</div>
+						</div>
+						<div class="order-inputs">
 							<div class="select-group">
 								<select id="order-form-modal-select-2" class="form-select">
 									<option value="">추가상품 (선택)</option>
@@ -1965,6 +1965,7 @@
 										</footer>
 									</div>
 								</li>
+								
 								<li class="checkout-item">
 									<div class="checkout-card">
 										<header class="checkout-header">
@@ -2021,7 +2022,7 @@
 	</aside>
 
 
-	<div class="overlay" aria-hidden></div>
+	<div class="overlay is-active" aria-hidden></div>
 	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 	<script defer src="./js/carousels.js"></script>
 
