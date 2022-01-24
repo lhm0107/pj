@@ -1080,8 +1080,7 @@ i {
     height: auto; }
   @media screen and (min-width: 768px) {
     .product-carousel {
-      padding-right: 30px;
-      margin-bottom: 40px; }
+      padding-right: 30px; }
       .product-carousel-slider {
         margin: 0 0 8px 0;
         overflow: hidden;
@@ -1262,43 +1261,44 @@ i {
     .product-info {
       margin-bottom: 20px; } }
 
-.order-form {
-  margin-bottom: 40px; }
-  .order-form .order-inputs,
-  .order-form .order-summary,
-  .order-form .order-checkouts {
-    margin-bottom: 20px; }
-    .order-form .order-inputs .selct-group,
-    .order-form .order-summary .selct-group,
-    .order-form .order-checkouts .selct-group {
-      margin-bottom: 8px; }
-      .order-form .order-inputs .selct-group:last-child,
-      .order-form .order-summary .selct-group:last-child,
-      .order-form .order-checkouts .selct-group:last-child {
-        margin-bottom: 8px; }
-  .order-form .order-checkouts .checkout-item {
+.order-form .order-inputs,
+.order-form .order-summary,
+.order-form .order-checkouts {
+  margin-bottom: 20px; }
+  .order-form .order-inputs .selct-group,
+  .order-form .order-summary .selct-group,
+  .order-form .order-checkouts .selct-group {
     margin-bottom: 8px; }
-    .order-form .order-checkouts .checkout-item .checkout-item:last-child {
-      margin-bottom: 0; }
-  .order-form .order-summary {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; }
-    .order-form .order-summary dt {
-      font-size: 13px;
-      line-height: 20px;
-      letter-spacing: -0.01em;
-      color: #191A20;
-      font-weight: 700; }
-  .order-form .button-group {
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-    .order-form .button-group button {
-      width: 50%;
-      margin-right: 8px; }
-      .order-form .button-group button:last-child {
-        margin-right: 0; }
+    .order-form .order-inputs .selct-group:last-child,
+    .order-form .order-summary .selct-group:last-child,
+    .order-form .order-checkouts .selct-group:last-child {
+      margin-bottom: 8px; }
+
+.order-form .order-checkouts .checkout-item {
+  margin-bottom: 8px; }
+  .order-form .order-checkouts .checkout-item .checkout-item:last-child {
+    margin-bottom: 0; }
+
+.order-form .order-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .order-form .order-summary dt {
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #191A20;
+    font-weight: 700; }
+
+.order-form .button-group {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .order-form .button-group button {
+    width: 50%;
+    margin-right: 8px; }
+    .order-form .button-group button:last-child {
+      margin-right: 0; }
 
 .checkout-card {
   position: relative;
@@ -1374,6 +1374,8 @@ i {
     height: 8px;
     margin: 0 -15px;
     background-color: #E0E2E7; }
+    .product-section-divider.is-big {
+      height: 24px; }
   @media screen and (min-width: 768px) {
     .product-section {
       width: 100%;
@@ -1506,8 +1508,10 @@ i {
     width: 100%;
     height: auto; }
   @media screen and (min-width: 768px) {
-    .product-spec .product-table {
-      margin-top: 40px; } }
+    .product-spec {
+      padding-top: 0; }
+      .product-spec .product-table {
+        margin-top: 40px; } }
 
 .review-scoreboard {
   display: flex;
@@ -2012,14 +2016,25 @@ i {
       letter-spacing: -0.01em;
       color: #FFF; }
     .gallery-card-detail .avatar-32 {
-      margin-right: 8px; }
+      margin-right: 8px;
+      transition: opacity 100ms ease-in-out; }
+      .gallery-card-detail .avatar-32:active {
+        opacity: 0.4; }
     .gallery-card-detail .user-name {
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
       flex-grow: 1;
       padding-right: 8px;
-      font-weight: 700; }
+      font-weight: 700;
+      transition: color 100ms ease-in-out; }
+      .gallery-card-detail .user-name:active {
+        color: #3DA5F5; }
+  @media screen and (min-width: 1200px) {
+    .gallery-card-detail .avatar-32:hover {
+      opacity: 0.4; }
+    .gallery-card-detail .user-name:hover {
+      color: #3DA5F5; } }
 
 .user-gallery {
   margin: 0 -15px;
@@ -2630,6 +2645,7 @@ i {
     .product-tab {
       top: 130px;
       height: 54px;
+      margin-top: 40px;
       background-color: #F7F8FA;
       border-bottom: 0; }
       .product-tab-list {
