@@ -32,11 +32,6 @@
 
 .select-group {
 	position: relative;
-	margin-bottom: 8px;
-
-	&:last-child {
-		margin-bottom: 0;
-	}
 
 	&.is-active {
 		.form-select {

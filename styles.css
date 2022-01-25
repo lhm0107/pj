@@ -649,10 +649,7 @@ address {
     opacity: 0.4; }
 
 .select-group {
-  position: relative;
-  margin-bottom: 8px; }
-  .select-group:last-child {
-    margin-bottom: 0; }
+  position: relative; }
   .select-group.is-active .form-select {
     border-color: #3DA5F5; }
   .select-group .form-select {
@@ -1272,13 +1269,13 @@ i {
 .order-form .order-summary,
 .order-form .order-checkouts {
   margin-bottom: 20px; }
-  .order-form .order-inputs .selct-group,
-  .order-form .order-summary .selct-group,
-  .order-form .order-checkouts .selct-group {
+  .order-form .order-inputs .select-group,
+  .order-form .order-summary .select-group,
+  .order-form .order-checkouts .select-group {
     margin-bottom: 8px; }
-    .order-form .order-inputs .selct-group:last-child,
-    .order-form .order-summary .selct-group:last-child,
-    .order-form .order-checkouts .selct-group:last-child {
+    .order-form .order-inputs .select-group:last-child,
+    .order-form .order-summary .select-group:last-child,
+    .order-form .order-checkouts .select-group:last-child {
       margin-bottom: 8px; }
 
 .order-form .order-checkouts .checkout-item {
@@ -2655,7 +2652,7 @@ i {
     .product-tab {
       top: 130px;
       height: 54px;
-      margin-top: 40px;
+      margin: 40px 0;
       background-color: #F7F8FA;
       border-bottom: 0; }
       .product-tab-list {
@@ -2751,9 +2748,12 @@ i {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+  position: sticky;
+  top: 184px;
   flex-direction: column;
-  height: 700px;
-  background-color: hotpink; }
+  max-height: calc(100vh - 184px);
+  min-height: calc(100vh - 370px);
+  padding: 24px 0; }
   .floating-order-form > * {
     width: 100%; }
   .floating-order-form .order-inputs,
