@@ -2781,4 +2781,45 @@ i {
     .floating-order-form .button-group .bookmark-button:hover {
       background-color: #F7F8FA; }
 
+.cart-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 500;
+  width: calc(100% - 30px);
+  max-width: 360px;
+  padding: 40px 24px;
+  overflow: hidden;
+  text-align: center;
+  background-color: #FFF;
+  border-radius: 8px; }
+  .cart-modal .cart-title {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #191A20;
+    margin-bottom: 24px; }
+  .cart-modal .button-group {
+    width: 100%; }
+    .cart-modal .button-group a,
+    .cart-modal .button-group button {
+      width: 100%; }
+    .cart-modal .button-group a {
+      margin-bottom: 8px; }
+  @media screen and (min-width: 768px) {
+    .cart-modal {
+      padding: 40px 32px; }
+      .cart-modal .cart-title {
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: -0.02em;
+        margin-bottom: 16px; }
+      .cart-modal .button-group a,
+      .cart-modal .button-group button {
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: -0.02em;
+        height: 55px; } }
+
 /*# sourceMappingURL=styles.css.map */

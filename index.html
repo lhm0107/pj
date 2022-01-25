@@ -1803,7 +1803,7 @@
 										</footer>
 									</div>
 								</li>
-								
+
 							</ul>
 						</div>
 
@@ -2161,7 +2161,7 @@
 		</div>
 	</aside>
 
-	<aside class="order-form-modal is-open lg-hidden">
+	<aside class="order-form-modal lg-hidden">
 		<h2 class="visually-hidden">주문창</h2>
 
 		<form class="order-form" action="/" method="post">
@@ -2282,8 +2282,19 @@
 		</form>
 	</aside>
 
+	<aside class="cart-modal">
+		<h2 class="cart-title">장바구니에 상품을 담았습니다</h2>
 
-	<div class="overlay" aria-hidden></div>
+		<div class="button-group">
+			<a class="btn-48 btn-primary" href="/">
+				장바구니 보러가기
+			</a>
+			<button class="btn-48 btn-secondary" type="button">확인</button>
+		</div>
+	</aside>
+
+	<div class="overlay is-active" aria-hidden></div>
+
 	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 	<script defer src="./js/carousels.js"></script>
 
