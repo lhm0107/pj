@@ -24,14 +24,19 @@
 	}
 }
 
-
 //NOTE: Select
-.form-select,.form-input {
+.form-select,
+.form-input {
 	@extend %form-base;
 }
 
 .select-group {
 	position: relative;
+	margin-bottom: 8px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
 
 	&.is-active {
 		.form-select {
@@ -52,7 +57,6 @@
 		pointer-events: none;
 	}
 }
-
 
 //NOTE: Input
 .input-group {

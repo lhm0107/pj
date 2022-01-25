@@ -622,7 +622,8 @@ address {
   letter-spacing: -0.02em;
   height: 55px; }
 
-.form-select, .form-input {
+.form-select,
+.form-input {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.01em;
@@ -636,16 +637,22 @@ address {
   border-radius: 4px;
   transition: background-color 200ms ease-in-out;
   appearance: none; }
-  .form-select::placeholder, .form-input::placeholder {
+  .form-select::placeholder,
+  .form-input::placeholder {
     color: #B2B3B9; }
-  .form-select:not(disabled):hover, .form-input:not(disabled):hover {
+  .form-select:not(disabled):hover,
+  .form-input:not(disabled):hover {
     background-color: #F7F8FA; }
-  .form-select:disabled, .form-input:disabled {
+  .form-select:disabled,
+  .form-input:disabled {
     cursor: not-allowed;
     opacity: 0.4; }
 
 .select-group {
-  position: relative; }
+  position: relative;
+  margin-bottom: 8px; }
+  .select-group:last-child {
+    margin-bottom: 0; }
   .select-group.is-active .form-select {
     border-color: #3DA5F5; }
   .select-group .form-select {
@@ -2739,5 +2746,39 @@ i {
     transform: translate3d(0, 100%, 0); }
   100% {
     transform: translate3d(0, 0, 0); } }
+
+.floating-order-form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 700px;
+  background-color: hotpink; }
+  .floating-order-form > * {
+    width: 100%; }
+  .floating-order-form .order-inputs,
+  .floating-order-form .order-summary,
+  .floating-order-form .button-group {
+    flex-grow: 0;
+    flex-shrink: 0; }
+  .floating-order-form .order-checkouts {
+    flex-grow: 1;
+    overflow-y: auto; }
+    .floating-order-form .order-checkouts::-webkit-scrollbar {
+      display: none; }
+  .floating-order-form .button-group .bookmark-button {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 55px;
+    border: 1px solid #E0E2E7;
+    border-radius: 4px;
+    transition: background-color 200ms ease-in-out; }
+    .floating-order-form .button-group .bookmark-button.is-active i {
+      color: #3DA5F5; }
+    .floating-order-form .button-group .bookmark-button i {
+      font-size: 32px;
+      color: #3F4150; }
+    .floating-order-form .button-group .bookmark-button:hover {
+      background-color: #F7F8FA; }
 
 /*# sourceMappingURL=styles.css.map */
