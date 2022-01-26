@@ -24,9 +24,9 @@
 	}
 }
 
-
 //NOTE: Select
-.form-select,.form-input {
+.form-select,
+.form-input {
 	@extend %form-base;
 }
 
@@ -52,7 +52,6 @@
 		pointer-events: none;
 	}
 }
-
 
 //NOTE: Input
 .input-group {
