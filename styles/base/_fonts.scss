@@ -1,12 +1,11 @@
 // scss-lint:disable all
 @font-face {
-    font-family: 'tomorrow';
-    src:  url('./assets/fonts/tomorrow.eot?emz54w');
-    src:  url('./assets/fonts/tomorrow.eot?emz54w#iefix') format('embedded-opentype'),
-      url('./assets/fonts/tomorrow.ttf?emz54w') format('truetype'),
-      url('./assets/fonts/tomorrow.woff?emz54w') format('woff'),
-      url('./assets/fonts/tomorrow.svg?emz54w#tomorrow') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
+	font-family: 'tomorrow';
+	src: url('./assets/fonts/tomorrow.eot?emz54w');
+	src: url('./assets/fonts/tomorrow.eot?emz54w#iefix') format('embedded-opentype'), url('./assets/fonts/tomorrow.ttf?emz54w') format('truetype'),
+		url('./assets/fonts/tomorrow.woff?emz54w') format('woff'), url('./assets/fonts/tomorrow.svg?emz54w#tomorrow') format('svg');
+
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
