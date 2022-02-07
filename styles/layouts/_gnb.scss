@@ -1,7 +1,7 @@
 .gnb {
 	position: relative;
-	border-bottom: 1px solid $border;
 	background-color: $white;
+	border-bottom: 1px solid $border;
 
 	&-wrapper {
 		@include flexbox(between);
@@ -65,7 +65,7 @@
 							margin-right: 12px;
 						}
 
-						&::hover {
+						&:hover {
 							color: $blue;
 						}
 					}
@@ -85,6 +85,7 @@
 
 		.btn-primary {
 			width: 88px;
+
 			i {
 				margin-left: 4px;
 			}
@@ -98,7 +99,7 @@
 			margin-right: 24px;
 
 			.input-group {
-				width: 100%;	
+				width: 100%;
 			}
 
 			.search-history {
@@ -108,16 +109,16 @@
 				display: none;
 				width: 100%;
 				padding: 16px 8px 8px;
+				background-color: $white;
 				border: 1px solid $border;
 				border-radius: 4px;
-				background-color: $white;
 				box-shadow: $dropdown-shadow;
-				
-				&.is-active{
+
+				&.is-active {
 					display: block;
 				}
 
-				&-header{
+				&-header {
 					padding: 0 8px;
 				}
 			}

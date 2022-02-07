@@ -8,8 +8,8 @@
 	z-index: $sidebar-level;
 	width: $sidebar-width;
 	height: 100vh;
-	overflow-y: auto;
 	padding: 32px 20px;
+	overflow-y: auto;
 	background-color: $white;
 	transform: translate3d(-#{$sidebar-width}, 0, 0);
 	transition: transform 300ms ease-in-out;
