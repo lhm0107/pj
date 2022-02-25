@@ -2222,8 +2222,8 @@ i {
 
 .gnb {
   position: relative;
-  border-bottom: 1px solid #E0E2E7;
-  background-color: #FFF; }
+  background-color: #FFF;
+  border-bottom: 1px solid #E0E2E7; }
   .gnb-wrapper {
     display: flex;
     align-items: center;
@@ -2273,7 +2273,7 @@ i {
             font-weight: 700; }
             .gnb-right .button-group .gnb-auth a:first-child {
               margin-right: 12px; }
-            .gnb-right .button-group .gnb-auth a::hover {
+            .gnb-right .button-group .gnb-auth a:hover {
               color: #3DA5F5; }
     .gnb .logo {
       position: static;
@@ -2299,9 +2299,9 @@ i {
         display: none;
         width: 100%;
         padding: 16px 8px 8px;
+        background-color: #FFF;
         border: 1px solid #E0E2E7;
         border-radius: 4px;
-        background-color: #FFF;
         box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); }
         .gnb-search .search-history.is-active {
           display: block; }
@@ -2315,8 +2315,8 @@ i {
   z-index: 200;
   width: 240px;
   height: 100vh;
-  overflow-y: auto;
   padding: 32px 20px;
+  overflow-y: auto;
   background-color: #FFF;
   transform: translate3d(-240px, 0, 0);
   transition: transform 300ms ease-in-out;
@@ -2433,7 +2433,8 @@ i {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 8px; }
-  .search-history-header .title, .search-history-header button {
+  .search-history-header .title,
+  .search-history-header button {
     font-size: 13px;
     line-height: 20px;
     letter-spacing: -0.01em;
@@ -2452,6 +2453,9 @@ i {
   height: 44px;
   padding: 0 8px; }
 
+.search-history-content.is-blank .placeholder {
+  display: none; }
+
 .search-history-item {
   position: relative;
   border-radius: 2px; }
@@ -2463,9 +2467,9 @@ i {
     letter-spacing: -0.01em;
     color: #3F4150;
     width: 100%;
-    text-align: left;
     padding: 10px 32px 10px 8px;
-    font-weight: 400; }
+    font-weight: 400;
+    text-align: left; }
   .search-history-item .delete-button {
     display: flex;
     align-items: center;
