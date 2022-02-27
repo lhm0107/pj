@@ -1741,7 +1741,7 @@ i {
     border-bottom: 0; }
 
 @media screen and (min-width: 768px) {
-  .product-review {
+  .product-review .review-empty {
     padding: 16px 0; } }
 
 .inquiry-card {
