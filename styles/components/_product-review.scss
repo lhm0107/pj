@@ -19,6 +19,8 @@
 	}
 
 	@include responsive(T) {
-		padding: 16px 0;
+		.review-empty {
+			padding: 16px 0;
+		}
 	}
 }
